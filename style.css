@@ -4,7 +4,7 @@ html, body { min-height: 100%; }
 body { min-height: 100vh; margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
 main { width: min(100% - 80px, 1280px); margin: auto; padding: 32px 0 48px; }
 .hero { position: relative; isolation: isolate; min-height: 560px; height: 76svh; max-height: 900px; display: grid; place-items: start center; padding-top: clamp(64px, 12svh, 140px); }
-.hero::before { content: ""; position: absolute; z-index: -1; inset: 0 calc((100vw - 100%) / -2); background: linear-gradient(180deg, var(--bg) 0%, transparent 22%, transparent 62%, var(--bg) 100%), url("https://ai-sthlm.github.io/assets/ai-sthlm.jpg") center 62% / auto 100% no-repeat; pointer-events: none; }
+.hero::before { content: ""; position: absolute; z-index: -1; inset: 0 calc((100vw - 100%) / -2); background: linear-gradient(180deg, var(--bg) 0%, transparent 22%, transparent 62%, var(--bg) 100%), url("https://ai-sthlm.github.io/assets/ai-sthlm.jpg") center 76% / auto 76% no-repeat; pointer-events: none; }
 h1 { margin: 0; font-size: clamp(5rem, 13.5vw, 11rem); font-weight: 500; line-height: 1.05; letter-spacing: -.065em; text-align: center; text-shadow: 0 4px 40px var(--bg); }
 .events-link { display: flex; align-items: center; justify-content: space-between; min-height: 104px; padding: 24px 4px; border-top: 1px solid #30414c; border-bottom: 1px solid #1b2b37; color: var(--text); font-size: clamp(1.5rem, 2.5vw, 2rem); font-weight: 450; letter-spacing: -.035em; text-decoration: none; transition: color .2s ease, border-color .2s ease; }
 .events-link span { display: grid; place-items: center; width: 48px; height: 48px; border: 1px solid #3a515e; border-radius: 50%; color: var(--accent); font-size: 1.5rem; transition: background .2s ease, color .2s ease, transform .2s ease; }
@@ -14,7 +14,7 @@ a:focus-visible { outline: 2px solid var(--gold); outline-offset: 6px; }
 @media (max-width: 600px) {
   main { width: calc(100% - 40px); padding: 0 0 28px; }
   .hero { height: 74svh; min-height: 420px; padding-top: 16svh; }
-  .hero::before { background-size: auto, auto 80%; background-position: center, center 80%; }
+  .hero::before { background-size: auto, auto 68%; background-position: center, center 86%; }
   h1 { font-size: clamp(4rem, 20vw, 7rem); }
   .events-link { min-height: 88px; }
 }
