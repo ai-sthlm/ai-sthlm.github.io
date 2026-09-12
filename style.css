@@ -1,0 +1,12 @@
+:root { color-scheme: dark; --bg: #07121c; --text: #edf4f7; --accent: #9ceaff; --gold: #f4d795; }
+* { box-sizing: border-box; }
+html, body { min-height: 100%; }
+body { min-height: 100vh; margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+body::before { content: ""; position: fixed; z-index: -1; inset: 0; background: linear-gradient(180deg, rgb(7 18 28 / .15), var(--bg) 88%), url("https://ai-sthlm.github.io/assets/ai-sthlm.jpg") center / cover no-repeat; }
+main { width: min(100% - 64px, 1080px); min-height: 100vh; margin: auto; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+h1 { margin: 0 0 1.6rem; font-size: clamp(5rem, 14vw, 10rem); font-weight: 540; line-height: .85; letter-spacing: -.085em; text-shadow: 0 2px 24px rgb(7 18 28 / .55); }
+a { padding-bottom: .55rem; border-bottom: 1px solid rgb(156 234 255 / .55); color: var(--accent); font-size: 1rem; font-weight: 650; text-decoration: none; transition: border-color .2s ease, color .2s ease; }
+a span { margin-left: .5rem; }
+a:hover { border-color: var(--gold); color: var(--gold); }
+a:focus-visible { outline: 2px solid var(--gold); outline-offset: 6px; }
+@media (max-width: 600px) { main { width: calc(100% - 40px); } h1 { font-size: clamp(4.5rem, 21vw, 7rem); } }
